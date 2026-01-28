@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root { color-scheme: dark; }
+
+html { scroll-behavior: smooth; }
+
+body { background: #05060d; }
+
+.bg-mesh {
+  position: relative;
+  background:
+    radial-gradient(600px 420px at 15% 15%, rgba(56,189,248,0.18), transparent 60%),
+    radial-gradient(520px 380px at 85% 20%, rgba(168,85,247,0.16), transparent 60%),
+    radial-gradient(520px 420px at 30% 85%, rgba(34,197,94,0.12), transparent 60%),
+    radial-gradient(520px 420px at 80% 85%, rgba(244,114,182,0.10), transparent 60%),
+    linear-gradient(180deg, #05060d 0%, #06071a 60%, #05060d 100%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bg-mesh::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.10;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.line {
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
