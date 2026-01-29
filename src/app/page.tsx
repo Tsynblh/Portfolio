@@ -29,28 +29,48 @@ export default async function Page() {
       {/* ABOUT */}
       <section id="about" className="mx-auto max-w-6xl px-6 pt-20 pb-10">
         <p className="text-white/60">Makassar, Indonesia</p>
-        <h1 className="mt-3 text-4xl md:text-6xl font-bold tracking-tight">
-          Tasya Nabila Hasanuddin
-        </h1>
-        <p className="mt-3 text-lg md:text-xl text-white/70">
-          Software Engineer | Cloud | Web Developer
-        </p>
-        <p className="mt-5 max-w-2xl text-white/70">
-          Hi! I’m Tasya Nabila Hasanuddin, a fresh graduate in Informatics Engineering from Hasanuddin University. 
-          I started with an interest in web development and have been expanding my focus toward backend engineering, 
-          cloud computing, and data analysis.
-        </p>
+        <div className="heroHeaderWrapper flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+          {/* LEFT: TEXT */}
+          <div className="heroTextWrapper max-w-2xl">
+            <p className="heroLocation text-sm text-white/60">Makassar, Indonesia</p>
 
-        <div className="mt-7 flex flex-wrap gap-4 text-sm">
-          <a className="underline underline-offset-4 text-white/80 hover:text-white" href="https://github.com/Tsynblh" target="_blank">
-            GitHub
-          </a>
-          <a className="underline underline-offset-4 text-white/80 hover:text-white" href="https://www.linkedin.com/in/tasya-nabila-hasanuddin-9730b22a8/" target="_blank">
-            LinkedIn
-          </a>
-          <a className="underline underline-offset-4 text-white/80 hover:text-white" href="mailto:tsynblh03@gmail.com">
-            Email
-          </a>
+            <h1 className="heroName mt-3 text-4xl font-bold tracking-tight md:text-6xl">
+              Tasya Nabila Hasanuddin
+            </h1>
+            <p className="heroRole mt-3 text-lg text-white/70 md:text-xl">
+              Software Engineer | Cloud | Web Developer
+            </p>
+
+            <p className="heroBio mt-6 text-sm leading-relaxed text-white/70 md:text-base">
+              Hi! I&apos;m Tasya Nabila Hasanuddin, a fresh graduate in Informatics Engineering
+              from Hasanuddin University. I started with an interest in web development and
+              have been expanding my focus toward backend engineering, cloud computing, and
+              data analysis.
+            </p>
+
+            <div className="heroLinks mt-6 flex gap-6 text-sm">
+              <a className="heroLink underline underline-offset-4 hover:text-white" href="https://github.com/Tsynblh" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a className="heroLink underline underline-offset-4 hover:text-white" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a className="heroLink underline underline-offset-4 hover:text-white" href="mailto:tsynblh03@gmail.com">
+                Email
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT: BIG PHOTO CARD */}
+          <div className="heroPhotoCardWrapper w-full max-w-md lg:max-w-lg">
+            <div className="heroPhotoCard relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 p-4 shadow-[0_0_40px_rgba(56,189,248,0.08)]">
+              <img
+                src="/profile.jpg"
+                alt="Tasya Nabila Hasanuddin"
+                className="heroPhotoBig h-65 w-full rounded-xl object-cover md:h-92.5"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
