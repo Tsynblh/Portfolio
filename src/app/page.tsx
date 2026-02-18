@@ -28,11 +28,10 @@ export default async function Page() {
     <main className="bg-mesh flex-col min-h-screen">
       {/* ABOUT */}
       <section id="about" className="mx-auto max-w-6xl px-6 pt-20 pb-10">
-        <p className="text-white/60">Makassar, Indonesia</p>
         <div className="heroHeaderWrapper flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
           {/* LEFT: TEXT */}
           <div className="heroTextWrapper max-w-2xl">
-            <p className="heroLocation text-sm text-white/60">Makassar, Indonesia</p>
+            <p className="heroLocation text-white/60">Makassar, Indonesia</p>
 
             <h1 className="heroName mt-3 text-4xl font-bold tracking-tight md:text-6xl">
               Tasya Nabila Hasanuddin
@@ -42,10 +41,11 @@ export default async function Page() {
             </p>
 
             <p className="heroBio mt-6 text-sm leading-relaxed text-white/70 md:text-base">
-              Hi! I&apos;m Tasya Nabila Hasanuddin, a fresh graduate in Informatics Engineering
-              from Hasanuddin University. I started with an interest in web development and
-              have been expanding my focus toward backend engineering, cloud computing, and
-              data analysis.
+              Informatics Engineering fresh graduate from Hasanuddin University and Bangkit Academy with 
+              expertise in Fullstack Development, Backend Engineering, and Cloud Computing. 
+              Experienced in building web-based applications using React and Next.js, developing RESTful APIs, 
+              implementing authentication and authorization systems, managing MySQL/PostgreSQL databases, 
+              and deploying backend services on Google Cloud Platform.
             </p>
 
             <div className="heroLinks mt-6 flex gap-6 text-sm">
