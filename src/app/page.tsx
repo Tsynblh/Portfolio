@@ -146,7 +146,7 @@ export default async function Page() {
                   width={168}
                   height={168}
                   priority
-                  className="h-full w-full object-cover"
+                  className="h-full w-full scale-[1.12] object-cover object-[center_32%] transition-transform duration-500 sm:scale-[1.1]"
                 />
               </div>
             </Reveal>
