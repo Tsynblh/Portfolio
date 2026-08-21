@@ -9,6 +9,13 @@ const manrope = Manrope({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Tasya Nabila Hasanuddin | Portfolio",
   description: "Fullstack Engineer focused on backend development, cloud computing, and modern web experiences.",
+  // icons: {
+  //   icon: [
+  //     { url: "/favicon.svg", type: "image/svg+xml" },
+  //     { url: "/favicon.ico", sizes: "any" },
+  //     { url: "/icon.png", type: "image/png" },
+  //   ],
+  // },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
