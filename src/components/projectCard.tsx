@@ -11,7 +11,8 @@ const projectStacks: Record<string, string[]> = {
   roseavenue: ["HTML", "CSS", "JavaScript"],
   elixir: ["Next.js", "TypeScript", "Firebase", "Material UI", "Tailwind CSS"],
   "e-dapeg": ["PHP", "CodeIgniter 4", "MySQL", "Bootstrap", "JavaScript"],
-  "smart-parking": ["Python", "gRPC", "REST API", "TypeScript", "Apache JMeter"],
+  "smart-parking": ["Python", "gRPC", "REST API", "PostgreSQL", "Django", "TypeScript", "Apache JMeter"],
+  dishcover: ["Next.js", "React", "TypeScript", "Python", "Django", "PostgreSQL", "Tailwind CSS"],
 };
 
 export default function ProjectCard({ repo, featured = false, index = 0 }: { repo: GithubRepo; featured?: boolean; index?: number }) {
