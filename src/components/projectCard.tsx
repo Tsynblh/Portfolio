@@ -13,7 +13,7 @@ const projectStacks: Record<string, string[]> = {
   "e-dapeg": ["PHP", "CodeIgniter 4", "MySQL", "Bootstrap", "JavaScript"],
   "smart-parking": ["Python", "gRPC", "REST API", "PostgreSQL", "Django", "TypeScript", "Apache JMeter"],
   dishcover: ["Next.js", "React", "TypeScript", "Python", "Django", "PostgreSQL", "Tailwind CSS"],
-  "kanjeng-laundry": ["React", "TypeScript", "Express", "Prisma", "PostgreSQL", "Tailwind CSS"],
+  "Kanjeng-laundry": ["React", "TypeScript", "Express", "Prisma", "PostgreSQL", "Tailwind CSS"],
 };
 
 export default function ProjectCard({ repo, featured = false, index = 0 }: { repo: GithubRepo; featured?: boolean; index?: number }) {
