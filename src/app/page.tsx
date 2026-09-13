@@ -116,6 +116,14 @@ const journey = [
       "Built E-DAPEG with PHP and MySQL in a two-person team, replacing manual Excel workflows for 68 employees.",
     icon: BriefcaseBusiness,
   },
+  {
+    period: "Aug 2026 — Present",
+    title: "Web Developer — MagangHub Internship",
+    place: "Rumah Sakit Umum Pusat Makassar",
+    description:
+      "Developing internal hospital systems using React, TypeScript, Node.js/Express, Prisma, and PostgreSQL, including a production laundry transaction platform and role/permission management for an existing IGD cashier system.",
+    icon: BriefcaseBusiness,
+  },
 ];
 
 const certificates = [
